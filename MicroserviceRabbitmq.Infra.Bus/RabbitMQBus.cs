@@ -104,7 +104,7 @@ namespace MicroserviceRabbitmq.Infra.Bus
             }
             catch (Exception exception)
             {
-                
+                Console.WriteLine(exception);
             }
         }
 

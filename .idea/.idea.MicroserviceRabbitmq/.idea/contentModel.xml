@@ -19,6 +19,88 @@
       <e p="Domain" t="Include" />
       <e p="Infra.Bus" t="Include" />
       <e p="Infra.IoC" t="Include" />
+      <e p="MicroserviceRabbitmq.Banking.Api" t="IncludeRecursive">
+        <e p="Controllers" t="Include">
+          <e p="BankingController.cs" t="Include" />
+        </e>
+        <e p="MicroserviceRabbitmq.Banking.Api.csproj" t="IncludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="MicroserviceRabbitmq.Banking.Api.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="wwwroot" t="Include" />
+      </e>
+      <e p="MicroserviceRabbitmq.Banking.Application" t="IncludeRecursive">
+        <e p="Interfaces" t="Include">
+          <e p="IAccountService.cs" t="Include" />
+        </e>
+        <e p="MicroserviceRabbitmq.Banking.Application.csproj" t="IncludeRecursive" />
+        <e p="Services" t="Include">
+          <e p="AccountService.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="MicroserviceRabbitmq.Banking.Application.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="MicroserviceRabbitmq.Banking.Data" t="IncludeRecursive">
+        <e p="Context" t="Include">
+          <e p="BankingDbContext.cs" t="Include" />
+        </e>
+        <e p="MicroserviceRabbitmq.Banking.Data.csproj" t="IncludeRecursive" />
+        <e p="Migrations" t="Include">
+          <e p="20191213132012_InitialCreate.Designer.cs" t="Include" />
+          <e p="20191213132012_InitialCreate.cs" t="Include" />
+          <e p="BankingDbContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="Repository" t="Include">
+          <e p="AccountRepository.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="MicroserviceRabbitmq.Banking.Data.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="MicroserviceRabbitmq.Banking.Domain" t="IncludeRecursive">
+        <e p="CommandHandlers" t="Include" />
+        <e p="Commands" t="Include" />
+        <e p="EventHandlers" t="Include" />
+        <e p="Events" t="Include" />
+        <e p="Interfaces" t="Include">
+          <e p="IAccountRepository.cs" t="Include" />
+        </e>
+        <e p="MicroserviceRabbitmq.Banking.Domain.csproj" t="IncludeRecursive" />
+        <e p="Models" t="Include">
+          <e p="Account.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="MicroserviceRabbitmq.Banking.Domain.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="MicroserviceRabbitmq.Domain.Core" t="IncludeRecursive">
         <e p="Bus" t="Include">
           <e p="IEventBus.cs" t="Include" />
@@ -66,7 +148,14 @@
         </e>
       </e>
       <e p="MicroserviceRabbitmq.sln" t="IncludeFlat" />
-      <e p="Microservices" t="Include" />
+      <e p="Microservices" t="Include">
+        <e p="Banking" t="Include">
+          <e p="Api" t="Include" />
+          <e p="Application" t="Include" />
+          <e p="Data" t="Include" />
+          <e p="Domain" t="Include" />
+        </e>
+      </e>
       <e p="Presentation" t="Include" />
       <e p="packages" t="ExcludeRecursive" />
     </e>
