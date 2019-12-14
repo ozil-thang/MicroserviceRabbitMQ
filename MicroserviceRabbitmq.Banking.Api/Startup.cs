@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using MediatR;
 using MicroserviceRabbitmq.Banking.Data.Context;
+using MicroserviceRabbitmq.Banking.Domain.Models;
 using MicroserviceRabbitmq.Infra.IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
